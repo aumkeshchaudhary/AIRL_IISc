@@ -2,6 +2,8 @@
 
 # Vision Transformer (ViT) on CIFAR-10
 
+[![Hugging Face Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-yellow)](https://huggingface.co/spaces/Aumkeshchy2003/ViT_Model)
+
 This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 dataset.
 
 ---
