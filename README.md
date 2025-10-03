@@ -43,4 +43,15 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 | ---------- | ------------- |
 | ViT (best) | **90.10%**    |
 
+--- 
+## Bonus Analysis
+
+* Patch size: Smaller patches (4×4) preserved local detail, helping on CIFAR-10 (small images).
+
+* Depth vs. Width: Depth=8, width=192 balanced expressiveness and efficiency — deeper models risk overfitting.
+
+* Augmentation: AutoAugment + RandomCrop significantly boosted generalization vs. plain normalization.
+
+* Optimizer & schedule: AdamW with warmup and weight decay stabilized training, improving convergence.
+
 
