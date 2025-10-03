@@ -97,4 +97,31 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
         !wget -q https://raw.githubusercontent.com/IDEA-Research/GroundingDINO/main/groundingdino/config/GroundingDINO_SwinT_OGC.py
         !wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
 
+## Example Usage
+
+   * Image Segmentation
+
+          image_url = "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/03/cat2.jpg"
+          text_prompt = "cat"
+          result = text_driven_segmentation(image_url, text_prompt)
+
+  * Video Segmentation
+
+          from google.colab import files
+          uploaded = files.upload()
+          video_path = list(uploaded.keys())[0]
+
+          text_prompt = "dog"
+          output_video = text_driven_video_segmentation(video_path, text_prompt)
+
+
+
+
+
+
+
+
+       
+
+
 
