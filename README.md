@@ -36,3 +36,11 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
         seed: 42
         augmentations: RandomCrop + HorizontalFlip + AutoAugment (CIFAR10 policy) + Normalize
 
+---
+## Results
+
+| Model      | Test Accuracy |
+| ---------- | ------------- |
+| ViT (best) | **90.10%**    |
+
+
