@@ -54,4 +54,12 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 
 * Optimizer & schedule: AdamW with warmup and weight decay stabilized training, improving convergence.
 
+---
+
+## Notes
+
+* The model achieves strong performance (~90%) while being relatively lightweight.
+
+* Further improvements could come from larger embeddings, Mixup/CutMix, or longer training schedules.
+
 
