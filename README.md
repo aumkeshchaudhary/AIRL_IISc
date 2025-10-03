@@ -19,20 +19,20 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 
 ---
 ## Best Model Config
-image_size: 32
-patch_size: 4
-in_channels: 3
-num_classes: 10
-emb_dim: 192        # model width
-num_heads: 6
-depth: 8            # transformer layers
-mlp_ratio: 4.0
-drop: 0.1
-batch_size: 128
-epochs: 300
-lr: 3e-4
-weight_decay: 0.05
-warmup_epochs: 5
-seed: 42
-augmentations: RandomCrop + HorizontalFlip + AutoAugment (CIFAR10 policy) + Normalize
+        image_size: 32
+        patch_size: 4
+        in_channels: 3
+        num_classes: 10
+        emb_dim: 192        # model width
+        num_heads: 6
+        depth: 8            # transformer layers
+        mlp_ratio: 4.0
+        drop: 0.1
+        batch_size: 128
+        epochs: 300
+        lr: 3e-4
+        weight_decay: 0.05
+        warmup_epochs: 5
+        seed: 42
+        augmentations: RandomCrop + HorizontalFlip + AutoAugment (CIFAR10 policy) + Normalize
 
