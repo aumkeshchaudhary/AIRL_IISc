@@ -71,6 +71,30 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 * Further improvements could come from larger embeddings, Mixup/CutMix, or longer training schedules.
 
 
+
 # Task 2
+
+## Text-Driven Image & Video Segmentation with SAM 2 + GroundingDINO
+
+This project integrates GroundingDINO for text-prompted object detection and Segment Anything 2 (SAM 2) for high-quality segmentation on both images and videos.
+
+## Features
+
+* Image Segmentation: Provide a text prompt (e.g., "cat") to detect and segment objects.
+
+* Video Segmentation: Track and segment objects throughout a video using SAM 2 video predictor.
+
+* Colab-Friendly: Full pipeline runs in Google Colab.
+
+## Installation (Colab)
+
+!pip install git+https://github.com/facebookresearch/segment-anything-2.git -q
+!pip install supervision transformers groundingdino-py -q
+!pip install opencv-python matplotlib pillow numpy torch torchvision -q
+
+# Download checkpoints
+   !wget -q https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt
+   !wget -q https://raw.githubusercontent.com/IDEA-Research/GroundingDINO/main/groundingdino/config/GroundingDINO_SwinT_OGC.py
+   !wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
 
 
