@@ -1,4 +1,4 @@
-Task 1
+## Task 1
 
 # Vision Transformer (ViT) on CIFAR-10
 
