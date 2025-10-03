@@ -88,11 +88,11 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
 
 ## Installation (Colab)
 
-!pip install git+https://github.com/facebookresearch/segment-anything-2.git -q
-!pip install supervision transformers groundingdino-py -q
-!pip install opencv-python matplotlib pillow numpy torch torchvision -q
+        !pip install git+https://github.com/facebookresearch/segment-anything-2.git -q
+        !pip install supervision transformers groundingdino-py -q
+        !pip install opencv-python matplotlib pillow numpy torch torchvision -q
 
-# Download checkpoints
+        # Download checkpoints
         !wget -q https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt
         !wget -q https://raw.githubusercontent.com/IDEA-Research/GroundingDINO/main/groundingdino/config/GroundingDINO_SwinT_OGC.py
         !wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
