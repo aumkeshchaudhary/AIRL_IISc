@@ -71,3 +71,6 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 * Further improvements could come from larger embeddings, Mixup/CutMix, or longer training schedules.
 
 
+## Task 2
+
+
