@@ -116,8 +116,8 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
 
 ## Demo Video
 
-https://github.com/user-attachments/assets/8a216114-3651-4bd2-969d-b23095e8c25c
 
+![output_video (2)](https://github.com/user-attachments/assets/ca41646e-249f-4359-b484-f0eaf0d2fea4)
 
        
 
