@@ -50,6 +50,8 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 | 250  | 0.2338     | 91.88              | 0.4187   | 89.41            |
 | 300  | 0.2211     | 92.09              | 0.4017   | 89.96            |
 
+**Best Test Accuracy:** **90.10%**
+
 
 --- 
 ### Bonus Analysis
