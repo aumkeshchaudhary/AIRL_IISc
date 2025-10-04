@@ -8,7 +8,7 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 
 ---
 
-##  How to Run in Colab
+### How to Run in Colab
 
 1. Open the notebook in Google Colab.
 2. Ensure GPU is enabled:  
@@ -20,7 +20,7 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
    Training will take ~2–3 hours for 300 epochs on a T4 GPU.
 
 ---
-## Best Model Config
+### Best Model Config
         image_size: 32
         patch_size: 4
         in_channels: 3
@@ -39,7 +39,7 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
         augmentations: RandomCrop + HorizontalFlip + AutoAugment (CIFAR10 policy) + Normalize
 
 ---
-## Results
+### Results
 
 | Epoch | Train Loss | Train Accuracy (%) | Val Loss | Val Accuracy (%) |
 |-------|------------|---------------------|----------|------------------|
@@ -52,7 +52,7 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 
 
 --- 
-## Bonus Analysis
+### Bonus Analysis
 
 - **Patch size:** Smaller patches (4×4) preserved local detail, helping on CIFAR-10 (small images).
 
@@ -64,7 +64,7 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 
 ---
 
-## Notes
+### Notes
 
 * The model achieves strong performance (~90%) while being relatively lightweight.
 
@@ -78,7 +78,9 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 
 This project integrates GroundingDINO for text-prompted object detection and Segment Anything 2 (SAM 2) for high-quality segmentation on both images and videos.
 
-## Features
+---
+
+### Features
 
 - **Image Segmentation:** Provide a text prompt (e.g., "cat") to detect and segment objects.
 
@@ -86,7 +88,9 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
 
 - **Colab-Friendly:** Full pipeline runs in Google Colab.
 
-## Installation (Colab)
+---
+
+### Installation (Colab)
 
         !pip install git+https://github.com/facebookresearch/segment-anything-2.git -q
         !pip install supervision transformers groundingdino-py -q
@@ -97,7 +101,9 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
         !wget -q https://raw.githubusercontent.com/IDEA-Research/GroundingDINO/main/groundingdino/config/GroundingDINO_SwinT_OGC.py
         !wget -q https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
 
-## Example Usage
+---
+
+### Example Usage
 
    **Image Segmentation**
 
@@ -114,8 +120,10 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
           text_prompt = "dog"
           output_video = text_driven_video_segmentation(video_path, text_prompt)
 
-## Demo Video
+### Demo Video
 ![output_video (2)](https://github.com/user-attachments/assets/ca41646e-249f-4359-b484-f0eaf0d2fea4)
+
+---
 
 ### Limitations
 - **Prompt sensitivity**: Segmentation performance depends on how clear and specific the text prompt is. Ambiguous prompts may lead to poor results.  
