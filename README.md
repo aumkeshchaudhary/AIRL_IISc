@@ -54,13 +54,13 @@ This repository implements a Vision Transformer (ViT) trained on the CIFAR-10 da
 --- 
 ## Bonus Analysis
 
-* Patch size: Smaller patches (4×4) preserved local detail, helping on CIFAR-10 (small images).
+- **Patch size:** Smaller patches (4×4) preserved local detail, helping on CIFAR-10 (small images).
 
-* Depth vs. Width: Depth=8, width=192 balanced expressiveness and efficiency — deeper models risk overfitting.
+- **Depth vs. Width:** Depth=8, width=192 balanced expressiveness and efficiency — deeper models risk overfitting.
 
-* Augmentation: AutoAugment + RandomCrop significantly boosted generalization vs. plain normalization.
+- **Augmentation:** AutoAugment + RandomCrop significantly boosted generalization vs. plain normalization.
 
-* Optimizer & schedule: AdamW with warmup and weight decay stabilized training, improving convergence.
+- **Optimizer & schedule:** AdamW with warmup and weight decay stabilized training, improving convergence.
 
 ---
 
@@ -80,11 +80,11 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
 
 ## Features
 
-* Image Segmentation: Provide a text prompt (e.g., "cat") to detect and segment objects.
+- **Image Segmentation:** Provide a text prompt (e.g., "cat") to detect and segment objects.
 
-* Video Segmentation: Track and segment objects throughout a video using SAM 2 video predictor.
+- **Video Segmentation:** Track and segment objects throughout a video using SAM 2 video predictor.
 
-* Colab-Friendly: Full pipeline runs in Google Colab.
+- **Colab-Friendly:** Full pipeline runs in Google Colab.
 
 ## Installation (Colab)
 
@@ -99,13 +99,13 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
 
 ## Example Usage
 
-   * Image Segmentation
+   **Image Segmentation**
 
           image_url = "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/03/cat2.jpg"
           text_prompt = "cat"
           result = text_driven_segmentation(image_url, text_prompt)
 
-  * Video Segmentation
+   **Video Segmentation**
 
           from google.colab import files
           uploaded = files.upload()
