@@ -115,8 +115,7 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
           output_video = text_driven_video_segmentation(video_path, text_prompt)
 
 ## Demo Video
-
-    <video src="https://github.com/aumkeshchaudhary/AIRL_IISc/issues/1#issue-3483250276" controls width="600"></video>
+<video src="https://github.com/aumkeshchaudhary/AIRL_IISc/issues/1#issue-3483250276" controls width="600"></video>
 
 
 
