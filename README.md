@@ -123,7 +123,6 @@ This project integrates GroundingDINO for text-prompted object detection and Seg
 ### Demo Video
 ![output_video (2)](https://github.com/user-attachments/assets/ca41646e-249f-4359-b484-f0eaf0d2fea4)
 
----
 
 ### Limitations
 - **Prompt sensitivity**: Segmentation performance depends on how clear and specific the text prompt is. Ambiguous prompts may lead to poor results.  
